@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Form en HTML5</title>
+</head>
+<body>
+
+<header>
+<h1> Titulo</h1>
+
+</header>
+<main>
+<section class="fomr">
+<form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <br>
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required>
+    <br>
+    <label for="dni">DNI:</label>
+    <input type="number" id="dni" name="dni" required>
+    <br>
+    <label for="fechaDeNacimiento">Fecha de Nacimiento:</label>
+    <input type="date" id="fechaDeNacimiento" name="fechaDeNacimiento" required>
+    <br>
+    <label for="genero">Genero:</label>
+    <input type="radio" id="masculino" name="genero">
+    <label for="masculino">masculino:</label>
+    <input type="radio" id="femenino" name="genero">
+    <label for="femenino">femenino:</label>
+    <br>
+    <label for="fechaDeNacimiento">Fecha de Nacimiento:</label>
+    <input type="" id="fechaDeNacimiento" name="fechaDeNacimiento" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="domicilio">Domicilio:</label>
+    <input type="text" id="domicilio" name="domicilio" required>
+    <br>
+    <label for="provincias">Seleccionar una Provincia </label>
+    <select name="provincias" id="provincias" required>
+      	<option value="jujuy">Jujuy</option>
+      	<option value="salta">Salta</option>
+        <option value="tucuman">Tucuman</option>
+        <option value="chaco">Chaco</option>    
+    </select>
+    <br>    
+    <label for="numTelefono">Numero de Telefono:</label>
+    <input type="text" id="numTelefono" name="numTelefono">
+    <br> 
+    <div class="checkbox">
+    <h2>Elige tus intereses</h2> <!-- Desde aqui el Checkbox, Usando etiqueta "input", con el Atributo "type" establecido "checkbox"-->
+        <label>
+            <input type="checkbox" name="intereses" value="deportes">
+            Deportes
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="intereses" value="musica">
+            Música
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="intereses" value="cine">
+            Cine
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="intereses" value="lectura">
+            Lectura
+        </label>
+        <br>
+    </div> <!-- FINAL del CheckBox -->
+     <label for="surgerenciaPEmpresa">Sugerencia para la Empresa:</label>
+    <br>  <!-- rows // especifica altura, num de fila. COLS define anchura numero de columnas -->
+    <textarea name="sugerenciasPEmpresa" id="surgerenciaPEmpresa" rows='20' cols='30'></textarea>
+    <br> 
+    <label for="password">Password:</label> 
+    <input type="password" id="password" name="password" required>
+    <br> 
+    <label for="passwordConfirmar">Confirmar Password:</label> 
+    <input type="password" id="passwordConfirmar" name="passwordConfirmar" required>
+    <br> 
+    
+    <div class="checkbox">
+    <h2>Acepta los terminos y condiciones</h2> <!-- Desde aqui el Checkbox, Usando etiqueta "input", con el Atributo "type" establecido "checkbox"-->
+        <label>
+            <input type="checkbox" name="intereses" value="deportes">
+            SI
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="intereses" value="musica">
+            Acepto recibir informacion relavita a la empresa
+        </label>
+    </div>
+    
+    
+    
+    <input type="submit" value="Enviar">
+
+</form>
+</section>
+
+
+</main>
+<footer>
+
+</footer>
+
+</body>
+</html>
