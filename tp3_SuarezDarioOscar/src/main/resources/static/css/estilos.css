@@ -4,7 +4,13 @@
 body {
           background-color: gray; 
         }
-        
+        .contenedorDeMainYAside{
+        display: flex;
+        }
+        .aside{
+        width: 30%;
+        padding: 10px;
+        }
         #encabezaPagina{
         background-color: black;
         color: white;
@@ -14,7 +20,9 @@ body {
         }
         
         
-        
+        .img{
+        width:100%;
+        }
         .form {
             margin:0 auto;
             background: #fff;

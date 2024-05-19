@@ -3,26 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <title>Mi primer Pagina Web HTML5</title>
+<link rel="stylesheet" href="/css/estilos.css" type="text/css">
 </head>
 <body>
 <!-- Cabecera Titulo  -->
-<header>
-<h1> Mi primer Pagina Web HTML5</h1>
-</header>
-<!-- Menu de Navegacion  -->
+<header id="encabezaPagina">
+<h1 class="tituloDePagina"> Mi primer Pagina Web HTML5</h1>
+    <!-- Menu de Navegacion  -->
     <nav>
         <ul>
-            <li><a href="#section-1">Seccion 1</a></li>
-            <li><a href="#section-2">Seccion 2</a></li>
-            <li><a href="#section-3">Seccion 3</a></li>
+            <li><a class="enlace" href="http://localhost:8080/home">Home</a></li>
+            <li><a class="enlace" href="/form">Formulario</a></li>
+            <li><a class="enlace" href="#section-3">Seccion 3</a></li>
         </ul>
     </nav>
+</header >
 
-<main> 
-<section id=section-1>
+<div class="contenedorDeMainYAside">
+<main class="contenidoPrincipal"> 
+<section class="section" id=section-1>
 <h2>Seccion 1 </h2>
-<h3>EL CLIMA </h3>
-<p>El cambio climático es uno de los mayores desafíos que enfrenta la humanidad en la actualidad. A medida que la temperatura del planeta aumenta y los patrones climáticos cambian, hay una creciente preocupación por los impactos ambientales, económicos y sociales que pueden resultar de estos cambios. Aquí hay algunos hechos importantes sobre el cambio climático:
+<h3>El Clima </h3>
+<p class="parrafo">El cambio climático es uno de los mayores desafíos que enfrenta la humanidad en la actualidad. A medida que la temperatura del planeta aumenta y los patrones climáticos cambian, hay una creciente preocupación por los impactos ambientales, económicos y sociales que pueden resultar de estos cambios. Aquí hay algunos hechos importantes sobre el cambio climático:
 
     Aumento de la temperatura: Desde finales del siglo XIX, la temperatura promedio de la superficie terrestre ha aumentado aproximadamente 1 grado Celsius, y se espera que siga aumentando en el futuro.
     Causas: Hay una amplia evidencia de que este aumento de temperatura se debe en gran parte a las emisiones de gases de efecto invernadero, como el dióxido de carbono y el metano, liberados por actividades humanas como la quema de combustibles fósiles y la deforestación.
@@ -30,9 +32,9 @@
 
 Es importante abordar el cambio climático de manera efectiva y rápida para evitar sus peores impactos. Esto requerirá una combinación de medidas políticas, tecnológicas y de comportamiento, que aborden tanto la mitigación de las emisiones de gases de efecto invernadero como la adaptación a los cambios ya en marcha. En resumen, la ciencia es clara en que debemos actuar con rapidez y de manera efectiva para abordar los impactos ya evidentes del cambio climático y evitar los peores impactos en el futuro </p>
 </section>
-<section id=section-2>
+<section class="section" id=section-2>
 <h2>Seccion 2 </h2>
-<h3>PROGRAMACION LENGUAJES MAS UTILIZADOS </h3>
+<h3>Programacion Lenguajes mas utilizados </h3>
 <p>Lista No Ordenada</p>
 <ul>
     <li>Java</li>
@@ -50,10 +52,10 @@ Es importante abordar el cambio climático de manera efectiva y rápida para evi
 <li>Swift</li>
 </ol>
 </section>
-<section id=section-3>
+<section class="section" id=section-3>
 <h2>Seccion 3</h2>
 <h3>Tipos de Datos en Java </h3>
-<table border="1">
+<table class="table" border="1">
         <tr> <!-- Utilizamos las etiquetas <tr> para definir las filas  -->
             <th>Tipos de Datos</th> <!-- y <th> para los encabezados de columna. -->
             <th>Tipos de Clases</th>
@@ -81,10 +83,13 @@ Es importante abordar el cambio climático de manera efectiva y rápida para evi
         </tr>
     </table>
 </section>
+
+</main>	
+
 <!-- Contenido adicional relacionado no directamente -->
-<aside>
+<aside class="aside">
 <h2>Los lenguajes de programación para el desarrollo web</h2>
-<a> <img alt="Imange de Lenguajes de Programacion " src="/imagenes/lenguajes-programacion01.jpg"> </a>
+<a> <img class="img" alt="Imange de Lenguajes de Programacion " src="/imagenes/lenguajes-programacion01.jpg"> </a>
 <!--  <img alt="Segunda Imagen" src="/imagenes/lenguajes01.jpg">  -->
 <h3> Java</h3>
 <ul>
@@ -116,7 +121,8 @@ Es importante abordar el cambio climático de manera efectiva y rápida para evi
 <li>Es apreciado por su elegancia y productividad.</li>
 </ul>
 </aside>
-</main>	
+</div>
+
 <footer id="pieDePagina">
 <h2 class="tituloDeTabla">Contacto</h2>
 <br>
